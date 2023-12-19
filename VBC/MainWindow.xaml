@@ -1,0 +1,33 @@
+﻿<Window x:Class="VBC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VBC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Image HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Source="/unnamed.jpg" Stretch="Fill"  Height="70" Width="100" RenderTransformOrigin="0.3,0.363"/>
+            <Button Content="Покупатели" Foreground="White" Background="DarkRed" Height="40" Margin="2" Click="PocupateliCick_Click"/>
+            <Button Content="Марки" Foreground="White" Background="DarkRed" Height="40" Margin="2" Click="MarkiClick"/>
+            <Button Content="Сотрудники" Foreground="White" Background="DarkRed" Height="40" Margin="2" Click="SotrudnickiClick"/>
+            <Button Content="Автомобиль" Foreground="White" Background="DarkRed" Height="40" Margin="2" Click="AvtomobilClick"/>
+            <Button Content="Продажи" Foreground="White" Background="DarkRed" Height="40" Margin="2" Click="ProdajiClick"/>
+        </StackPanel>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="400" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Text="Автосалон" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30" FontWeight="Medium"/>
+            </Grid>
+            <Frame Grid.Row="1" Name="MainFrame" Width="Auto" Height="Auto"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Page x:Class="VBC.RedMarki"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VBC"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RedMarki" Background="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Редактировать марки" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="20"/>
+        <StackPanel>
+            <TextBlock Text="Название" Margin="5,50,0,0"/>
+            <TextBlock Text="Страна производитель" Margin="5"/>
+            <TextBlock Text="Завод производитель" Margin="5"/>
+            <TextBlock Text="Адрес" Margin="5"/>
+            <Button Background="DarkRed" Foreground="White" Height="20" Width="60" Margin="5" Content="Отмена"  HorizontalAlignment="Left"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Height="23" Width="200" HorizontalAlignment="Right" Margin="0,50,0,0"/>
+            <TextBox Height="23" Width="200" HorizontalAlignment="Right" />
+            <TextBox Height="23" Width="200" HorizontalAlignment="Right"/>
+            <TextBox Height="23" Width="200" HorizontalAlignment="Right"/>
+            <Button Background="DarkRed" Foreground="White" Height="20" Width="200" Content="Cохранить"  HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</Page>
